@@ -7,7 +7,9 @@ import about2Img from '../../../public/about-2.png';
 
 export function About() {
   return (
-    <section className="bg-[#fdf6ec] py-16">
+    <section
+    id="sobre"
+     className="bg-[#fdf6ec] py-16">
       <div className="container px-4 mx-auto">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -30,7 +32,7 @@ export function About() {
             />
           </div>
 
-          {/* Segunda imagem sobreposta */}
+         
           <div className="absolute w-40 h-40 right-4 -bottom-8 overflow-hidden rounded-full border-4 border-white">
             <Image
               src={about2Img}
@@ -44,7 +46,7 @@ export function About() {
 
         </div>
 
-        {/* Texto explicativo */}
+        
         <div className="flex flex-col justify-center space-y-6 mt-10"    data-aos="fade-up-left"
               data-aos-delay="500">
           <h2 className="text-4xl font-bold mb-4">Sobre Nosso Pet Shop</h2>
@@ -74,7 +76,7 @@ export function About() {
             <a
               target='_blank'
               href= {'https://wa.me/123456789?text=Ola vim pelo site e gostaria de mais informações'}
-              className="bg-[#e84c3d] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+              className="bg-[#2ebe52] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
             >
               <WhatsappLogo size={20} weight="bold" className="text-white" />
               Contato via Whatsapp

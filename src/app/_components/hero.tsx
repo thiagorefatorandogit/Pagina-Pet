@@ -8,7 +8,8 @@ import Image from 'next/image';
 export function Hero() {
   return (
     <section 
-    className="bg-[#e84c3d] text-white relative overflow-hidden">
+    id='home'
+  className="bg-[#1d4ed8] text-white relative overflow-hidden" style={{ zIndex: 1 }}>
 
         <div>
             <Image
@@ -38,6 +39,7 @@ export function Hero() {
               Oferecemos os melhores serviços para garantir o bem-estar e a
               felicidade do seu amigo de quatro patas.
             </p>
+            
 
             <a
               data-aos="fade-up"

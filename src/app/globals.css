@@ -123,3 +123,60 @@
     @apply bg-background text-foreground;
   }
 }
+/* ===========================
+   PetCare – Variáveis globais
+   =========================== */
+
+:root {
+  /* Cores principais */
+  --petcare-primary: #2563eb;
+  --petcare-primary-dark: #1d4ed8;
+  --petcare-primary-light: #eff6ff;
+
+  /* Cores de status */
+  --petcare-pending-bg: #fef9c3;
+  --petcare-pending-text: #a16207;
+  --petcare-pending-border: #facc15;
+
+  --petcare-confirmed-bg: #dcfce7;
+  --petcare-confirmed-text: #15803d;
+  --petcare-confirmed-border: #4ade80;
+
+  --petcare-cancelled-bg: #fee2e2;
+  --petcare-cancelled-text: #b91c1c;
+  --petcare-cancelled-border: #f87171;
+
+  /* Cores neutras */
+  --petcare-bg: #eff6ff;
+  --petcare-card: #ffffff;
+  --petcare-text: #1e293b;
+  --petcare-text-muted: #64748b;
+  --petcare-border: #bfdbfe;
+
+  /* Espaçamentos */
+  --petcare-radius: 12px;
+  --petcare-radius-lg: 16px;
+  --petcare-radius-full: 50px;
+
+  /* Sombras */
+  --petcare-shadow-sm: 0 2px 8px rgba(37, 99, 235, 0.07);
+  --petcare-shadow-md: 0 4px 20px rgba(37, 99, 235, 0.08);
+  --petcare-shadow-lg: 0 8px 32px rgba(37, 99, 235, 0.15);
+
+  /* Tipografia */
+  --petcare-font-size-sm: 0.85rem;
+  --petcare-font-size-base: 0.95rem;
+  --petcare-font-size-lg: 1.1rem;
+  --petcare-font-size-xl: 1.8rem;
+  --petcare-font-size-2xl: 2rem;
+}
+
+/* Reset básico PetCare */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}

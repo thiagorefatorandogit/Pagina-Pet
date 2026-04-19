@@ -18,7 +18,9 @@ const brands = [
 
 export function Footer() {
   return (
-    <section className="bg-[#e84c3d] py-16 text-white">
+    <section 
+    id='marcas'
+    className="bg-[#1e3a8a] py-16 text-white">
       <div className="container mx-auto px-4">
         <div className="border-b border-white/20 pb-8">
           <h4 className="text-3xl font-semibold mb-8 text-center">
@@ -50,9 +52,11 @@ export function Footer() {
           <footer className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-5'>
             <div>
               <h3 className='text-2xl font-semibold mb-2'>Pet Shop </h3>
-              <p className='mb-4'>Cuidando do seu melhor amigo com amor e dedicação.</p>
-              <a href="#"
+              <p className='mb-4'>Cuidando do seu melhor amigo <br/>
+                 com amor e dedicação.</p>
+              <a href={'https://wa.me/123456789?text=Ola vim pelo site e gostaria de mais informações sobre ${item.title}'}
               className='bg-green-500 px-4 py-2 rounded-md '
+              target='_blank'
               >
                 Contato via whatsApp
               </a>
@@ -68,14 +72,17 @@ export function Footer() {
                <h3 className='text-2xl font-semibold mb-2'>Redes Sociais</h3>
              <div className='flex gap-4'>
               <a href="#"
+              target='_blank'
               >
              <FacebookLogo className='w-8 h-8'/>
               </a>
               <a href="#"
+              target='_blank'
               >
              <InstagramLogo className='w-8 h-8'/>
               </a>
               <a href="#"
+              target='_blank'
               >
              <YoutubeLogo className='w-8 h-8'/>
               </a>
